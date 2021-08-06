@@ -1,0 +1,676 @@
+{
+	"type": "Program",
+	"items": [
+		{
+			"type": "FunctionDefine",
+			"specifiers": [
+				{
+					"type": "Token",
+					"value": "int",
+					"tokenId": 0
+				}
+			],
+			"declarator": {
+				"type": "FunctionDeclarator",
+				"declarator": {
+					"type": "VariableDeclarator",
+					"identifier": {
+						"type": "Identifier",
+						"value": "main",
+						"tokenId": 1
+					}
+				},
+				"params": []
+			},
+			"body": {
+				"type": "CompoundStatement",
+				"blockItems": [
+					{
+						"type": "Declaration",
+						"specifiers": [
+							{
+								"type": "Token",
+								"value": "int",
+								"tokenId": 5
+							}
+						],
+						"initLists": [
+							{
+								"type": "InitList",
+								"declarator": {
+									"type": "ArrayDeclarator",
+									"declarator": {
+										"type": "VariableDeclarator",
+										"identifier": {
+											"type": "Identifier",
+											"value": "a",
+											"tokenId": 6
+										}
+									},
+									"expr": {
+										"type": "IntegerConstant",
+										"value": 5,
+										"tokenId": 8
+									}
+								},
+								"exprs": []
+							},
+							{
+								"type": "InitList",
+								"declarator": {
+									"type": "VariableDeclarator",
+									"identifier": {
+										"type": "Identifier",
+										"value": "i",
+										"tokenId": 11
+									}
+								},
+								"exprs": []
+							},
+							{
+								"type": "InitList",
+								"declarator": {
+									"type": "VariableDeclarator",
+									"identifier": {
+										"type": "Identifier",
+										"value": "j",
+										"tokenId": 13
+									}
+								},
+								"exprs": []
+							},
+							{
+								"type": "InitList",
+								"declarator": {
+									"type": "VariableDeclarator",
+									"identifier": {
+										"type": "Identifier",
+										"value": "t",
+										"tokenId": 15
+									}
+								},
+								"exprs": []
+							}
+						]
+					},
+					{
+						"type": "IterationStatement",
+						"init": [
+							{
+								"type": "BinaryExpression",
+								"op": {
+									"type": "Token",
+									"value": "=",
+									"tokenId": 20
+								},
+								"expr1": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 19
+								},
+								"expr2": {
+									"type": "IntegerConstant",
+									"value": 0,
+									"tokenId": 21
+								}
+							}
+						],
+						"cond": [
+							{
+								"type": "BinaryExpression",
+								"op": {
+									"type": "Token",
+									"value": "<",
+									"tokenId": 24
+								},
+								"expr1": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 23
+								},
+								"expr2": {
+									"type": "IntegerConstant",
+									"value": 5,
+									"tokenId": 25
+								}
+							}
+						],
+						"step": [
+							{
+								"type": "PostfixExpression",
+								"expr": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 27
+								},
+								"op": {
+									"type": "Token",
+									"value": "++",
+									"tokenId": 28
+								}
+							}
+						],
+						"stat": {
+							"type": "CompoundStatement",
+							"blockItems": [
+								{
+									"type": "ExpressionStatement",
+									"exprs": [
+										{
+											"type": "BinaryExpression",
+											"op": {
+												"type": "Token",
+												"value": "=",
+												"tokenId": 35
+											},
+											"expr1": {
+												"type": "ArrayAccess",
+												"arrayName": {
+													"type": "Identifier",
+													"value": "a",
+													"tokenId": 31
+												},
+												"elements": [
+													{
+														"type": "Identifier",
+														"value": "i",
+														"tokenId": 33
+													}
+												]
+											},
+											"expr2": {
+												"type": "FunctionCall",
+												"funcname": {
+													"type": "Identifier",
+													"value": "MARS_GETI",
+													"tokenId": 36
+												},
+												"argList": []
+											}
+										}
+									]
+								}
+							]
+						}
+					},
+					{
+						"type": "IterationStatement",
+						"init": [
+							{
+								"type": "BinaryExpression",
+								"op": {
+									"type": "Token",
+									"value": "=",
+									"tokenId": 44
+								},
+								"expr1": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 43
+								},
+								"expr2": {
+									"type": "IntegerConstant",
+									"value": 0,
+									"tokenId": 45
+								}
+							}
+						],
+						"cond": [
+							{
+								"type": "BinaryExpression",
+								"op": {
+									"type": "Token",
+									"value": "<",
+									"tokenId": 48
+								},
+								"expr1": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 47
+								},
+								"expr2": {
+									"type": "IntegerConstant",
+									"value": 4,
+									"tokenId": 49
+								}
+							}
+						],
+						"step": [
+							{
+								"type": "PostfixExpression",
+								"expr": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 51
+								},
+								"op": {
+									"type": "Token",
+									"value": "++",
+									"tokenId": 52
+								}
+							}
+						],
+						"stat": {
+							"type": "CompoundStatement",
+							"blockItems": [
+								{
+									"type": "IterationStatement",
+									"init": [
+										{
+											"type": "BinaryExpression",
+											"op": {
+												"type": "Token",
+												"value": "=",
+												"tokenId": 58
+											},
+											"expr1": {
+												"type": "Identifier",
+												"value": "j",
+												"tokenId": 57
+											},
+											"expr2": {
+												"type": "IntegerConstant",
+												"value": 0,
+												"tokenId": 59
+											}
+										}
+									],
+									"cond": [
+										{
+											"type": "BinaryExpression",
+											"op": {
+												"type": "Token",
+												"value": "<",
+												"tokenId": 62
+											},
+											"expr1": {
+												"type": "Identifier",
+												"value": "j",
+												"tokenId": 61
+											},
+											"expr2": {
+												"type": "BinaryExpression",
+												"op": {
+													"type": "Token",
+													"value": "-",
+													"tokenId": 64
+												},
+												"expr1": {
+													"type": "IntegerConstant",
+													"value": 5,
+													"tokenId": 63
+												},
+												"expr2": {
+													"type": "Identifier",
+													"value": "i",
+													"tokenId": 65
+												}
+											}
+										}
+									],
+									"step": [
+										{
+											"type": "PostfixExpression",
+											"expr": {
+												"type": "Identifier",
+												"value": "j",
+												"tokenId": 67
+											},
+											"op": {
+												"type": "Token",
+												"value": "++",
+												"tokenId": 68
+											}
+										}
+									],
+									"stat": {
+										"type": "CompoundStatement",
+										"blockItems": [
+											{
+												"type": "SelectionStatement",
+												"cond": [
+													{
+														"type": "BinaryExpression",
+														"op": {
+															"type": "Token",
+															"value": ">",
+															"tokenId": 77
+														},
+														"expr1": {
+															"type": "ArrayAccess",
+															"arrayName": {
+																"type": "Identifier",
+																"value": "a",
+																"tokenId": 73
+															},
+															"elements": [
+																{
+																	"type": "Identifier",
+																	"value": "j",
+																	"tokenId": 75
+																}
+															]
+														},
+														"expr2": {
+															"type": "ArrayAccess",
+															"arrayName": {
+																"type": "Identifier",
+																"value": "a",
+																"tokenId": 78
+															},
+															"elements": [
+																{
+																	"type": "BinaryExpression",
+																	"op": {
+																		"type": "Token",
+																		"value": "+",
+																		"tokenId": 81
+																	},
+																	"expr1": {
+																		"type": "Identifier",
+																		"value": "j",
+																		"tokenId": 80
+																	},
+																	"expr2": {
+																		"type": "IntegerConstant",
+																		"value": 1,
+																		"tokenId": 82
+																	}
+																}
+															]
+														}
+													}
+												],
+												"then": {
+													"type": "CompoundStatement",
+													"blockItems": [
+														{
+															"type": "ExpressionStatement",
+															"exprs": [
+																{
+																	"type": "BinaryExpression",
+																	"op": {
+																		"type": "Token",
+																		"value": "=",
+																		"tokenId": 87
+																	},
+																	"expr1": {
+																		"type": "Identifier",
+																		"value": "t",
+																		"tokenId": 86
+																	},
+																	"expr2": {
+																		"type": "ArrayAccess",
+																		"arrayName": {
+																			"type": "Identifier",
+																			"value": "a",
+																			"tokenId": 88
+																		},
+																		"elements": [
+																			{
+																				"type": "Identifier",
+																				"value": "j",
+																				"tokenId": 90
+																			}
+																		]
+																	}
+																}
+															]
+														},
+														{
+															"type": "ExpressionStatement",
+															"exprs": [
+																{
+																	"type": "BinaryExpression",
+																	"op": {
+																		"type": "Token",
+																		"value": "=",
+																		"tokenId": 97
+																	},
+																	"expr1": {
+																		"type": "ArrayAccess",
+																		"arrayName": {
+																			"type": "Identifier",
+																			"value": "a",
+																			"tokenId": 93
+																		},
+																		"elements": [
+																			{
+																				"type": "Identifier",
+																				"value": "j",
+																				"tokenId": 95
+																			}
+																		]
+																	},
+																	"expr2": {
+																		"type": "ArrayAccess",
+																		"arrayName": {
+																			"type": "Identifier",
+																			"value": "a",
+																			"tokenId": 98
+																		},
+																		"elements": [
+																			{
+																				"type": "BinaryExpression",
+																				"op": {
+																					"type": "Token",
+																					"value": "+",
+																					"tokenId": 101
+																				},
+																				"expr1": {
+																					"type": "Identifier",
+																					"value": "j",
+																					"tokenId": 100
+																				},
+																				"expr2": {
+																					"type": "IntegerConstant",
+																					"value": 1,
+																					"tokenId": 102
+																				}
+																			}
+																		]
+																	}
+																}
+															]
+														},
+														{
+															"type": "ExpressionStatement",
+															"exprs": [
+																{
+																	"type": "BinaryExpression",
+																	"op": {
+																		"type": "Token",
+																		"value": "=",
+																		"tokenId": 111
+																	},
+																	"expr1": {
+																		"type": "ArrayAccess",
+																		"arrayName": {
+																			"type": "Identifier",
+																			"value": "a",
+																			"tokenId": 105
+																		},
+																		"elements": [
+																			{
+																				"type": "BinaryExpression",
+																				"op": {
+																					"type": "Token",
+																					"value": "+",
+																					"tokenId": 108
+																				},
+																				"expr1": {
+																					"type": "Identifier",
+																					"value": "j",
+																					"tokenId": 107
+																				},
+																				"expr2": {
+																					"type": "IntegerConstant",
+																					"value": 1,
+																					"tokenId": 109
+																				}
+																			}
+																		]
+																	},
+																	"expr2": {
+																		"type": "Identifier",
+																		"value": "t",
+																		"tokenId": 112
+																	}
+																}
+															]
+														}
+													]
+												},
+												"otherwise": null
+											}
+										]
+									}
+								}
+							]
+						}
+					},
+					{
+						"type": "IterationStatement",
+						"init": [
+							{
+								"type": "BinaryExpression",
+								"op": {
+									"type": "Token",
+									"value": "=",
+									"tokenId": 120
+								},
+								"expr1": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 119
+								},
+								"expr2": {
+									"type": "IntegerConstant",
+									"value": 0,
+									"tokenId": 121
+								}
+							}
+						],
+						"cond": [
+							{
+								"type": "BinaryExpression",
+								"op": {
+									"type": "Token",
+									"value": "<",
+									"tokenId": 124
+								},
+								"expr1": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 123
+								},
+								"expr2": {
+									"type": "IntegerConstant",
+									"value": 5,
+									"tokenId": 125
+								}
+							}
+						],
+						"step": [
+							{
+								"type": "PostfixExpression",
+								"expr": {
+									"type": "Identifier",
+									"value": "i",
+									"tokenId": 127
+								},
+								"op": {
+									"type": "Token",
+									"value": "++",
+									"tokenId": 128
+								}
+							}
+						],
+						"stat": {
+							"type": "CompoundStatement",
+							"blockItems": [
+								{
+									"type": "ExpressionStatement",
+									"exprs": [
+										{
+											"type": "BinaryExpression",
+											"op": {
+												"type": "Token",
+												"value": "=",
+												"tokenId": 132
+											},
+											"expr1": {
+												"type": "Identifier",
+												"value": "t",
+												"tokenId": 131
+											},
+											"expr2": {
+												"type": "ArrayAccess",
+												"arrayName": {
+													"type": "Identifier",
+													"value": "a",
+													"tokenId": 133
+												},
+												"elements": [
+													{
+														"type": "Identifier",
+														"value": "i",
+														"tokenId": 135
+													}
+												]
+											}
+										}
+									]
+								},
+								{
+									"type": "ExpressionStatement",
+									"exprs": [
+										{
+											"type": "FunctionCall",
+											"funcname": {
+												"type": "Identifier",
+												"value": "MARS_PUTI",
+												"tokenId": 138
+											},
+											"argList": [
+												{
+													"type": "Identifier",
+													"value": "t",
+													"tokenId": 140
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "ExpressionStatement",
+									"exprs": [
+										{
+											"type": "FunctionCall",
+											"funcname": {
+												"type": "Identifier",
+												"value": "MARS_PUTS",
+												"tokenId": 143
+											},
+											"argList": [
+												{
+													"type": "StringConstant",
+													"value": "\"\\n\"",
+													"tokenId": 145
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					},
+					{
+						"type": "ReturnStatement",
+						"expr": null
+					}
+				]
+			}
+		}
+	]
+}

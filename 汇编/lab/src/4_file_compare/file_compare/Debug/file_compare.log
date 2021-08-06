@@ -1,0 +1,3 @@
+﻿  Assembling main.asm...
+main.asm(171): warning A6004: procedure argument or local not referenced : structrect
+  file_compare.vcxproj -> D:\资料\2021年春\汇编语言与技术接口\lab\Project3\Debug\file_compare.exe

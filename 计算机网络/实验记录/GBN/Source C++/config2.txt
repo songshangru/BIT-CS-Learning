@@ -1,0 +1,7 @@
+UDPPort:12345
+error_rate:0
+lost_rate:0
+SW_size:16
+time_out:1000
+data_size:1024
+init_seq_no:0

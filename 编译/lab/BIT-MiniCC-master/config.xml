@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config name="config.xml">
+  <phases>
+    <phase>
+      <phase skip="true" type="java" path="" name="preprocess" />
+      <phase skip="false" type="java" path="bit.minisys.minicc.scanner.MyScanner" name="scan" />
+      <phase skip="false" type="java" path="bit.minisys.minicc.parser.MyParser" name="parse" ></phase>
+      <phase skip="false" type="java" path="bit.minisys.minicc.semantic.MySemanticAnalyzer" name="semantic" />
+      <phase skip="false" type="java" path="bit.minisys.minicc.icgen.MyICGen" name="icgen" />
+      <phase skip="true" type="java" path="" name="optimize" />
+      <phase skip="false" type="java" path="bit.minisys.minicc.ncgen.MyCodeGen" name="ncgen" target="mips" ra="ls" ></phase>
+      <phase skip="false" type="mips" path="" name="simulate" />
+    </phase>
+  </phases>
+</config>
+

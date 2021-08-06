@@ -1,0 +1,3 @@
+D:\Envs\cmake\bin\cmake.exe -E rm -f CMakeFiles\dvsim.dir/objects.a
+D:\Envs\mingw64\bin\ar.exe cr CMakeFiles\dvsim.dir/objects.a @CMakeFiles\dvsim.dir\objects1.rsp
+D:\Envs\mingw64\bin\g++.exe -Wl,--whole-archive CMakeFiles\dvsim.dir/objects.a -Wl,--no-whole-archive -o dvsim.exe -Wl,--out-implib,libdvsim.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dvsim.dir\linklibs.rsp

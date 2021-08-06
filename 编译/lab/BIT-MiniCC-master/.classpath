@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/BITMiniCC_20200404_obf.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-4.8-complete.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-annotations-2.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-2.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-databind-2.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1-beta-6.jar"/>
+	<classpathentry kind="lib" path="lib/jdom.jar"/>
+	<classpathentry kind="lib" path="lib/jython.jar"/>
+	<classpathentry kind="lib" path="lib/Mars4_5.jar"/>
+	<classpathentry kind="lib" path="lib/Rars.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

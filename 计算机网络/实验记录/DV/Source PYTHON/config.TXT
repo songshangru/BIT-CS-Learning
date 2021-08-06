@@ -1,0 +1,3 @@
+"Frequency": 1000
+"Unreachable": 200.0
+"MaxValidTime": 30000

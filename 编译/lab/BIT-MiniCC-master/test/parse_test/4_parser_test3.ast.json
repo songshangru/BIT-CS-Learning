@@ -1,0 +1,174 @@
+{
+	"type": "Program",
+	"items": [
+		{
+			"type": "FunctionDefine",
+			"specifiers": [
+				{
+					"type": "Token",
+					"value": "int",
+					"tokenId": 0
+				}
+			],
+			"declarator": {
+				"type": "FunctionDeclarator",
+				"declarator": {
+					"type": "VariableDeclarator",
+					"identifier": {
+						"type": "Identifier",
+						"value": "main",
+						"tokenId": 1
+					}
+				},
+				"params": []
+			},
+			"body": {
+				"type": "CompoundStatement",
+				"blockItems": [
+					{
+						"type": "Declaration",
+						"specifiers": [
+							{
+								"type": "Token",
+								"value": "int",
+								"tokenId": 5
+							}
+						],
+						"initLists": [
+							{
+								"type": "InitList",
+								"declarator": {
+									"type": "VariableDeclarator",
+									"identifier": {
+										"type": "Identifier",
+										"value": "a",
+										"tokenId": 6
+									}
+								},
+								"exprs": []
+							}
+						]
+					},
+					{
+						"type": "ExpressionStatement",
+						"exprs": [
+							{
+								"type": "BinaryExpression",
+								"op": {
+									"type": "Token",
+									"value": "=",
+									"tokenId": 9
+								},
+								"expr1": {
+									"type": "Identifier",
+									"value": "a",
+									"tokenId": 8
+								},
+								"expr2": {
+									"type": "FunctionCall",
+									"funcname": {
+										"type": "Identifier",
+										"value": "MARS_GETI",
+										"tokenId": 10
+									},
+									"argList": []
+								}
+							}
+						]
+					},
+					{
+						"type": "ExpressionStatement",
+						"exprs": [
+							{
+								"type": "BinaryExpression",
+								"op": {
+									"type": "Token",
+									"value": "*=",
+									"tokenId": 15
+								},
+								"expr1": {
+									"type": "Identifier",
+									"value": "a",
+									"tokenId": 14
+								},
+								"expr2": {
+									"type": "IntegerConstant",
+									"value": 10,
+									"tokenId": 16
+								}
+							}
+						]
+					},
+					{
+						"type": "ExpressionStatement",
+						"exprs": [
+							{
+								"type": "FunctionCall",
+								"funcname": {
+									"type": "Identifier",
+									"value": "MARS_PUTI",
+									"tokenId": 18
+								},
+								"argList": [
+									{
+										"type": "Identifier",
+										"value": "a",
+										"tokenId": 20
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "ExpressionStatement",
+						"exprs": [
+							{
+								"type": "PostfixExpression",
+								"expr": {
+									"type": "Identifier",
+									"value": "a",
+									"tokenId": 23
+								},
+								"op": {
+									"type": "Token",
+									"value": "++",
+									"tokenId": 24
+								}
+							}
+						]
+					},
+					{
+						"type": "ExpressionStatement",
+						"exprs": [
+							{
+								"type": "FunctionCall",
+								"funcname": {
+									"type": "Identifier",
+									"value": "MARS_PUTI",
+									"tokenId": 26
+								},
+								"argList": [
+									{
+										"type": "Identifier",
+										"value": "a",
+										"tokenId": 28
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "ReturnStatement",
+						"expr": [
+							{
+								"type": "IntegerConstant",
+								"value": 0,
+								"tokenId": 32
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}

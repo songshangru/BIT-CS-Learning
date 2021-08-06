@@ -1,0 +1,105 @@
+var $a <[10][20]> i32
+var $b i32
+func &f1(var %x i32, var %y i32) i32{
+var %z i32
+dassign %6(
+	add i32(dread i32 %x,dread i32 %y))
+dassign %7(regread i32 %6)
+dassign %z(regread i32 %7)
+return (dread i32 %z)}
+
+func &f2() void{
+dassign %8(addrof a32 _1sc)
+call Mars_PrintStr(regread a32 %8)
+return ()}
+
+func &main() i32{
+var %a1 i32
+var %a2 i32
+var %res i32
+dassign %10(constval i32 1)
+dassign %a1(regread i32 %10)
+dassign %12(constval i32 2)
+dassign %a2(regread i32 %12)
+dassign %14(
+	lnot i32(dread i32 %a1))
+dassign %res(regread i32 %14)
+dassign %15(
+	neg i32(dread i32 %a1))
+dassign %res(regread i32 %15)
+dassign %16(
+	add i32(dread i32 %a1,dread i32 %a2))
+dassign %17(regread i32 %16)
+dassign %res(regread i32 %17)
+dassign %18(
+	rem i32(dread i32 %a1,dread i32 %a2))
+dassign %19(regread i32 %18)
+dassign %res(regread i32 %19)
+dassign %20(
+	shl i32(dread i32 %a1,dread i32 %a2))
+dassign %21(regread i32 %20)
+dassign %res(regread i32 %21)
+dassign %22(dread i32 %a1)
+dassign %23(constval i32 1)
+dassign %a1(
+	add i32(dread i32 %a1,regread i32 %23))
+dassign %res(regread i32 %22)
+dassign %24(constval i32 1)
+dassign %a1(
+	add i32(dread i32 %a1,regread i32 %24))
+dassign %25(dread i32 %a1)
+dassign %res(regread i32 %25)
+brfalse <@1shortwaytrue>(dread i32 %a1)
+dassign %26(
+	land i32(dread i32 %a1,dread i32 %a2))
+goto <@1shortwayfalse>
+@1shortwaytrue:
+dassign %27(constval i32 0)
+goto <@1shortwayend>
+@1shortwayfalse:
+dassign %27(regread i32 %26)
+@1shortwayend:
+brfalse <@1otherwise1>(regread i32 %27)
+dassign %28(
+	call f1(dread i32 %a1,dread i32 %a2))
+dassign %res(regread i32 %28)
+goto <@1endif>
+@1otherwise1:
+dassign %29(
+	lnot i32(dread i32 %a1))
+brfalse <@1otherwise2>(regread i32 %29)
+dassign $b(
+	iread i32(constval i32 800))
+dassign %30(
+	call f1(dread i32 $b,dread i32 %a2))
+dassign %res(regread i32 %30)
+goto <@1endif>
+@1otherwise2:
+call f2()
+@1endif:
+var %i i32
+dassign %32(constval i32 0)
+dassign %i(regread i32 %32)
+@1LoopCheckLabel:
+dassign %33(
+	lt i32(dread i32 %i,dread i32 %a1))
+dassign %34(regread i32 %33)
+brfalse <@1LoopEndLabel>(regread i32 %34)
+goto <@1LoopEndLabel>
+goto <@1LoopStepLabel>
+dassign %35(constval i32 1)
+dassign %36(
+	add i32(dread i32 %res,regread i32 %35))
+dassign %res(regread i32 %36)
+@1LoopStepLabel:
+dassign %37(dread i32 %i)
+dassign %38(constval i32 1)
+dassign %i(
+	add i32(dread i32 %i,regread i32 %38))
+goto <@1LoopCheckLabel>
+@1LoopEndLabel:
+@k:
+goto <@k>
+dassign %39(constval i32 0)
+return (regread i32 %39)}
+

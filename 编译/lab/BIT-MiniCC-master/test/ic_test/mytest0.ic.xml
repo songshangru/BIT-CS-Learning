@@ -1,0 +1,163 @@
+var $a <[10][20]> i32
+var $b i32
+func &f1(var %x i32, var %y i32) i32{
+var %z i32
+dassign %6(
+	add i32(dread i32 %x,dread i32 %y))
+dassign %7(regread i32 %6)
+dassign %z(regread i32 %7)
+return (dread i32 %z)}
+
+func &f2() void{
+return ()}
+
+func &main() i32{
+var %a1 i32
+var %a2 i32
+var %res i32
+dassign %8(constval i32 3)
+dassign %9(constval i32 2)
+dassign %10(constval i32 0)
+dassign %10(
+	add i32(regread i32 %10,regread i32 %9))
+dassign %10(
+	mul i32(regread i32 %10,constval i32 20))
+dassign %10(
+	add i32(regread i32 %10,regread i32 %8))
+dassign %10(
+	mul i32(regread i32 %10,constval i32 4))
+dassign %11(constval i32 0)
+dassign %10(
+	add i32(regread i32 %10,regread i32 %11))
+dassign %10(
+	iread i32(regread i32 %10))
+dassign %13(constval i32 1)
+dassign %a1(regread i32 %13)
+dassign %15(constval i32 2)
+dassign %a2(regread i32 %15)
+dassign %17(
+	lnot i32(dread i32 %a1))
+dassign %res(regread i32 %17)
+dassign %18(
+	neg i32(dread i32 %a1))
+dassign %res(regread i32 %18)
+dassign %19(
+	add i32(dread i32 %a1,dread i32 %a2))
+dassign %20(regread i32 %19)
+dassign %res(regread i32 %20)
+dassign %21(
+	rem i32(dread i32 %a1,dread i32 %a2))
+dassign %22(regread i32 %21)
+dassign %res(regread i32 %22)
+dassign %23(
+	shl i32(dread i32 %a1,dread i32 %a2))
+dassign %24(regread i32 %23)
+dassign %res(regread i32 %24)
+dassign %25(dread i32 %a1)
+dassign %26(constval i32 1)
+dassign %a1(
+	add i32(dread i32 %a1,regread i32 %26))
+dassign %res(regread i32 %25)
+dassign %27(constval i32 1)
+dassign %a1(
+	add i32(dread i32 %a1,regread i32 %27))
+dassign %28(dread i32 %a1)
+dassign %res(regread i32 %28)
+brfalse <@1shortwaytrue>(dread i32 %a1)
+dassign %29(
+	land i32(dread i32 %a1,dread i32 %a2))
+goto <@1shortwayfalse>
+@1shortwaytrue:
+dassign %30(constval i32 0)
+goto <@1shortwayend>
+@1shortwayfalse:
+dassign %30(regread i32 %29)
+@1shortwayend:
+brfalse <@1otherwise1>(regread i32 %30)
+call f1(dread i32 %a1,dread i32 %a2)
+dassign %31(regread i32 %retval0)
+dassign %res(regread i32 %31)
+goto <@1endif>
+@1otherwise1:
+dassign %32(
+	lnot i32(dread i32 %a1))
+brfalse <@1otherwise2>(regread i32 %32)
+dassign $b(
+	iread i32(constval i32 800))
+call f1(dread i32 $b,dread i32 %a2)
+dassign %33(regread i32 %retval0)
+dassign %res(regread i32 %33)
+goto <@1endif>
+@1otherwise2:
+call f2()
+@1endif:
+var %i i32
+dassign %35(constval i32 0)
+dassign %i(regread i32 %35)
+@1LoopCheckLabel:
+dassign %36(
+	lt i32(dread i32 %i,dread i32 %a1))
+dassign %37(regread i32 %36)
+brfalse <@1LoopEndLabel>(regread i32 %37)
+var %j i32
+dassign %39(constval i32 0)
+dassign %j(regread i32 %39)
+@2LoopCheckLabel:
+dassign %40(
+	lt i32(dread i32 %j,dread i32 %a1))
+dassign %41(regread i32 %40)
+brfalse <@2LoopEndLabel>(regread i32 %41)
+dassign %42(constval i32 0)
+dassign %42(
+	add i32(regread i32 %42,dread i32 %i))
+dassign %42(
+	mul i32(regread i32 %42,constval i32 20))
+dassign %42(
+	add i32(regread i32 %42,dread i32 %j))
+dassign %42(
+	mul i32(regread i32 %42,constval i32 4))
+dassign %43(constval i32 0)
+dassign %42(
+	add i32(regread i32 %42,regread i32 %43))
+dassign %42(
+	iread i32(regread i32 %42))
+@2LoopStepLabel:
+dassign %44(dread i32 %j)
+dassign %45(constval i32 1)
+dassign %j(
+	add i32(dread i32 %j,regread i32 %45))
+goto <@2LoopCheckLabel>
+@2LoopEndLabel:
+@1LoopStepLabel:
+dassign %46(dread i32 %i)
+dassign %47(constval i32 1)
+dassign %i(
+	add i32(dread i32 %i,regread i32 %47))
+goto <@1LoopCheckLabel>
+@1LoopEndLabel:
+var %i i32
+dassign %49(constval i32 0)
+dassign %i(regread i32 %49)
+@3LoopCheckLabel:
+dassign %50(
+	lt i32(dread i32 %i,dread i32 %a1))
+dassign %51(regread i32 %50)
+brfalse <@3LoopEndLabel>(regread i32 %51)
+goto <@3LoopEndLabel>
+goto <@3LoopStepLabel>
+dassign %52(constval i32 1)
+dassign %53(
+	add i32(dread i32 %res,regread i32 %52))
+dassign %res(regread i32 %53)
+@3LoopStepLabel:
+dassign %54(dread i32 %i)
+dassign %55(constval i32 1)
+dassign %i(
+	add i32(dread i32 %i,regread i32 %55))
+goto <@3LoopCheckLabel>
+@3LoopEndLabel:
+@k:
+goto <@k>
+dassign %56(constval i32 0)
+return (regread i32 %56)}
+
