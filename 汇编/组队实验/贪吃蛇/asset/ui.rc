@@ -1,0 +1,42 @@
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#define	ICO_MAIN		100
+#define back_ground     100
+#define player1_head      101
+#define player1_body      102
+#define player1_tail      103
+#define apple           104
+#define apple_mask      105
+#define wall            106
+#define grass           107
+#define emoji           108
+#define player2_head      109
+#define player2_body      110
+#define player2_tail      111
+#define fast              112
+#define large             113
+#define large_mask        114
+#define dizzy             115
+#define dizzy_mask        116
+#define num               117
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ICO_MAIN	ICON		"Main.ico"
+back_ground BITMAP      "back.bmp"
+player1_head  BITMAP      "player1_head.bmp"
+player1_body  BITMAP      "player1_body.bmp"
+player1_tail  BITMAP      "player1_tail.bmp"
+apple       BITMAP      "apple.bmp"
+apple_mask  BITMAP      "apple_mask.bmp"
+grass       BITMAP      "grass.bmp"
+emoji       BITMAP      "emoji.bmp"
+wall        BITMAP      "wall.bmp"
+player2_head  BITMAP      "player2_head.bmp"
+player2_body  BITMAP      "player2_body.bmp"
+player2_tail  BITMAP      "player2_tail.bmp"
+fast        BITMAP        "fast.bmp"
+large       BITMAP         "large.bmp"
+large_mask  BITMAP         "large_mask.bmp"
+dizzy       BITMAP         "dizzy.bmp"
+dizzy_mask  BITMAP         "dizzy_mask.bmp"
+num         BITMAP         "num.bmp"
