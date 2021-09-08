@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Class_Selected" msprop:Generator_TableClassName="Class_SelectedDataTable" msprop:Generator_TableVarName="tableClass_Selected" msprop:Generator_RowChangedName="Class_SelectedRowChanged" msprop:Generator_TablePropName="Class_Selected" msprop:Generator_RowDeletingName="Class_SelectedRowDeleting" msprop:Generator_RowChangingName="Class_SelectedRowChanging" msprop:Generator_RowEvHandlerName="Class_SelectedRowChangeEventHandler" msprop:Generator_RowDeletedName="Class_SelectedRowDeleted" msprop:Generator_RowClassName="Class_SelectedRow" msprop:Generator_UserTableName="Class_Selected" msprop:Generator_RowEvArgName="Class_SelectedRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Class_ID" msprop:Generator_ColumnVarNameInTable="columnClass_ID" msprop:Generator_ColumnPropNameInRow="Class_ID" msprop:Generator_ColumnPropNameInTable="Class_IDColumn" msprop:Generator_UserColumnName="Class_ID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Credit" msprop:Generator_ColumnVarNameInTable="columnCredit" msprop:Generator_ColumnPropNameInRow="Credit" msprop:Generator_ColumnPropNameInTable="CreditColumn" msprop:Generator_UserColumnName="Credit" type="xs:int" />
+              <xs:element name="TeacherName" msprop:Generator_ColumnVarNameInTable="columnTeacherName" msprop:Generator_ColumnPropNameInRow="TeacherName" msprop:Generator_ColumnPropNameInTable="TeacherNameColumn" msprop:Generator_UserColumnName="TeacherName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" msprop:Generator_UserColumnName="Time" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Class_UnSelected" msprop:Generator_TableClassName="Class_UnSelectedDataTable" msprop:Generator_TableVarName="tableClass_UnSelected" msprop:Generator_RowChangedName="Class_UnSelectedRowChanged" msprop:Generator_TablePropName="Class_UnSelected" msprop:Generator_RowDeletingName="Class_UnSelectedRowDeleting" msprop:Generator_RowChangingName="Class_UnSelectedRowChanging" msprop:Generator_RowEvHandlerName="Class_UnSelectedRowChangeEventHandler" msprop:Generator_RowDeletedName="Class_UnSelectedRowDeleted" msprop:Generator_RowClassName="Class_UnSelectedRow" msprop:Generator_UserTableName="Class_UnSelected" msprop:Generator_RowEvArgName="Class_UnSelectedRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Class_ID" msprop:Generator_ColumnVarNameInTable="columnClass_ID" msprop:Generator_ColumnPropNameInRow="Class_ID" msprop:Generator_ColumnPropNameInTable="Class_IDColumn" msprop:Generator_UserColumnName="Class_ID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Credit" msprop:Generator_ColumnVarNameInTable="columnCredit" msprop:Generator_ColumnPropNameInRow="Credit" msprop:Generator_ColumnPropNameInTable="CreditColumn" msprop:Generator_UserColumnName="Credit" type="xs:int" />
+              <xs:element name="TeacherName" msprop:Generator_ColumnVarNameInTable="columnTeacherName" msprop:Generator_ColumnPropNameInRow="TeacherName" msprop:Generator_ColumnPropNameInTable="TeacherNameColumn" msprop:Generator_UserColumnName="TeacherName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" msprop:Generator_UserColumnName="Time" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
