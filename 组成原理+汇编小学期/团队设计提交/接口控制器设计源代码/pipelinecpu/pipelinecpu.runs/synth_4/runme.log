@@ -1,0 +1,746 @@
+
+*** Running vivado
+    with args -log top_pipeline.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_pipeline.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top_pipeline.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top top_pipeline -part xc7a100tcsg324-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/data_ram/data_ram.xci
+E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/clk_wiz/clk_wiz.xci
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/clk_wiz/clk_wiz.xci
+
+INFO: [IP_Flow 19-2162] IP 'clk_wiz' is locked:
+* IP definition 'Clocking Wizard (5.4)' for IP 'clk_wiz' (customized with software release 2017.2) has a newer major version in the IP Catalog. * IP definition 'Clocking Wizard (5.4)' for IP 'clk_wiz' (customized with software release 2017.2) has a different revision in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc7a35tcsg324-1' used to customize the IP 'clk_wiz' do not match.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1432 
+WARNING: [Synth 8-6901] identifier 'exe_mem_pc_src' is used before its declaration [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:42]
+WARNING: [Synth 8-6901] identifier 'exe_mem_pc' is used before its declaration [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:42]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 868.613 ; gain = 240.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_pipeline' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/top_pipeline.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/pc.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (1#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/pc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/if_id.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (2#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/if_id.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/regfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (3#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/regfile.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'wa' does not match port width (5) of module 'regfile' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:82]
+INFO: [Synth 8-6157] synthesizing module 'control' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/control.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'control' (4#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/control.v:4]
+INFO: [Synth 8-6157] synthesizing module 'id_exe' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/id_exe.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'id_exe' (5#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/id_exe.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/alu.v:23]
+WARNING: [Synth 8-3848] Net zero in module/entity alu does not have driver. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/alu.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (6#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/alu.v:3]
+WARNING: [Synth 8-7023] instance 'alu' of module 'alu' has 6 connections declared, but only 5 given [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:169]
+INFO: [Synth 8-6157] synthesizing module 'exe_mem' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/exe_mem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'exe_mem' (7#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/exe_mem.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'reg_wa_' does not match port width (5) of module 'exe_mem' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:208]
+WARNING: [Synth 8-7023] instance 'exe_mem' of module 'exe_mem' has 19 connections declared, but only 18 given [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:191]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/mem_wb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb' (8#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/mem_wb.v:3]
+WARNING: [Synth 8-689] width (32) of port connection '_reg_wa' does not match port width (5) of module 'mem_wb' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:228]
+WARNING: [Synth 8-689] width (32) of port connection 'reg_wa_' does not match port width (5) of module 'mem_wb' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:236]
+INFO: [Synth 8-6157] synthesizing module 'stall' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/stall.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'stall' (9#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/stall.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (10#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/synth_4/.Xil/Vivado-1972-LAPTOP-KNMQOHOL/realtime/inst_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (11#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/synth_4/.Xil/Vivado-1972-LAPTOP-KNMQOHOL/realtime/inst_rom_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'data_ram' [e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/data_ram/synth/data_ram.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/data_ram/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/data_ram/synth/data_ram.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'data_ram' (15#1) [e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/data_ram/synth/data_ram.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/confreg/confreg.v:8]
+INFO: [Synth 8-226] default block is never used [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/confreg/confreg.v:111]
+INFO: [Synth 8-226] default block is never used [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/confreg/confreg.v:132]
+INFO: [Synth 8-226] default block is never used [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/confreg/confreg.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (16#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/confreg/confreg.v:8]
+INFO: [Synth 8-6157] synthesizing module 'vga' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/vga.v:31]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/synth_4/.Xil/Vivado-1972-LAPTOP-KNMQOHOL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (17#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/synth_4/.Xil/Vivado-1972-LAPTOP-KNMQOHOL/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-4471] merging register 'reg_b_reg[3:0]' into 'reg_g_reg[3:0]' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/vga.v:131]
+WARNING: [Synth 8-6014] Unused sequential element reg_b_reg was removed.  [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/vga.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (18#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/vga.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'top_pipeline' (19#1) [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/top_pipeline.v:3]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[31]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[30]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[29]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[28]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[27]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[26]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[25]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[24]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[23]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[22]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[21]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[20]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[19]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[18]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[17]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[16]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[31]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[30]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[29]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[28]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[27]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[26]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[25]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[24]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[23]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[22]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[21]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[20]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[19]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[18]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[17]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[16]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[0]
+WARNING: [Synth 8-3331] design spram has unconnected port i_ce
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[16]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 930.355 ; gain = 302.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 930.355 ; gain = 302.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 930.355 ; gain = 302.559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 930.355 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/inst_rom/inst_rom/inst_rom_in_context.xdc] for cell 'inst_rom_4k'
+Finished Parsing XDC File [e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/inst_rom/inst_rom/inst_rom_in_context.xdc] for cell 'inst_rom_4k'
+Parsing XDC File [e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'vga/u_clk_wiz'
+Finished Parsing XDC File [e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'vga/u_clk_wiz'
+Parsing XDC File [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'switch[7]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'switch[6]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'switch[5]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'switch[4]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'switch[3]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'switch[2]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'switch[1]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'switch[0]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'switch[7]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'switch[6]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'switch[5]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'switch[4]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'switch[3]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'switch[2]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'switch[1]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'switch[0]'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'down_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'left_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'mid_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'right_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'up_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'down_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'left_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'right_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'up_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'mid_btn_key'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'rs232_rxd'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'rs232_txd'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'rs232_rxd'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'rs232_txd'. [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc:125]
+Finished Parsing XDC File [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_pipeline_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/constrs_1/new/port_light_control.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_pipeline_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_pipeline_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/synth_4/dont_touch.xdc]
+Finished Parsing XDC File [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/synth_4/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1054.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1054.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1054.094 ; gain = 426.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1054.094 ; gain = 426.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  e:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for data_ram_4k. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_rom_4k. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vga/u_clk_wiz. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1054.094 ; gain = 426.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "get_op_id" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'alu_res_tmp_reg' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/alu.v:15]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.094 ; gain = 426.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 46    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   9 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     11 Bit        Muxes := 2     
+	  11 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   8 Input      5 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 39    
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_pipeline 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module if_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+Module id_exe 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---Muxes : 
+	   9 Input     33 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module exe_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module mem_wb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module stall 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   8 Input      5 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 3     
+	  11 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+Module spram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module confreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top_pipeline has port digital_cs[7] driven by constant 0
+WARNING: [Synth 8-3917] design top_pipeline has port digital_cs[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_pipeline has port digital_cs[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_pipeline has port digital_cs[4] driven by constant 0
+WARNING: [Synth 8-3917] design top_pipeline has port digital_cs[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_pipeline has port digital_cs[2] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mycpu0/exe_mem/pc__reg[1] )
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/rd__reg[3]' (FDR) to 'mycpu0/id_exe/imm__reg[14]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/rd__reg[4]' (FDR) to 'mycpu0/id_exe/imm__reg[15]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/rd__reg[2]' (FDR) to 'mycpu0/id_exe/imm__reg[13]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/rd__reg[1]' (FDR) to 'mycpu0/id_exe/imm__reg[12]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/rd__reg[0]' (FDR) to 'mycpu0/id_exe/imm__reg[11]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[16]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[17]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[18]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[19]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[20]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[21]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[22]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[23]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[24]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[25]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[26]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[27]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[28]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[29]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'mycpu0/id_exe/imm__reg[30]' (FDR) to 'mycpu0/id_exe/imm__reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/reg_g_reg[0]' (FD) to 'vga/reg_g_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/reg_g_reg[1]' (FD) to 'vga/reg_g_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/reg_g_reg[2]' (FD) to 'vga/reg_g_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/reg_g_reg[3] )
+INFO: [Synth 8-3886] merging instance 'vga/reg_r_reg[0]' (FDR) to 'vga/reg_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/reg_r_reg[1]' (FDR) to 'vga/reg_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/reg_r_reg[2]' (FDR) to 'vga/reg_r_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (mycpu0/alu/alu_res_tmp_reg[32]) is unused and will be removed from module top_pipeline.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1054.094 ; gain = 426.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++---------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|Module Name    | RTL Object                                                | Inference | Size (Depth x Width) | Primitives       | 
++---------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|data_ram_4k/U0 | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 1 K x 32             | RAM256X1S x 128	 | 
++---------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1054.094 ; gain = 426.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1054.094 ; gain = 426.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++---------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|Module Name    | RTL Object                                                | Inference | Size (Depth x Width) | Primitives       | 
++---------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+|data_ram_4k/U0 | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 1 K x 32             | RAM256X1S x 128	 | 
++---------------+-----------------------------------------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1063.359 ; gain = 435.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1068.043 ; gain = 440.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1068.043 ; gain = 440.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1068.043 ; gain = 440.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1068.043 ; gain = 440.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1068.043 ; gain = 440.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1068.043 ; gain = 440.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_rom      |         1|
+|2     |clk_wiz       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz   |     1|
+|2     |inst_rom  |     1|
+|3     |BUFG      |     1|
+|4     |CARRY4    |    24|
+|5     |LUT1      |     4|
+|6     |LUT2      |    27|
+|7     |LUT3      |    94|
+|8     |LUT4      |   156|
+|9     |LUT5      |    32|
+|10    |LUT6      |   839|
+|11    |MUXF7     |   288|
+|12    |RAM256X1S |   128|
+|13    |FDCE      |  1089|
+|14    |FDRE      |   386|
+|15    |LD        |    32|
+|16    |IBUF      |     1|
+|17    |OBUF      |    36|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------------------+---------------------------+------+
+|      |Instance                            |Module                     |Cells |
++------+------------------------------------+---------------------------+------+
+|1     |top                                 |                           |  3170|
+|2     |  data_ram_4k                       |data_ram                   |   196|
+|3     |    U0                              |dist_mem_gen_v8_0_13       |   196|
+|4     |      \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_13_synth |   196|
+|5     |        \gen_sp_ram.spram_inst      |spram                      |   196|
+|6     |  confreg                           |confreg                    |   121|
+|7     |  mycpu0                            |cpu                        |  2670|
+|8     |    alu                             |alu                        |    48|
+|9     |    exe_mem                         |exe_mem                    |   139|
+|10    |    id_exe                          |id_exe                     |   297|
+|11    |    if_id                           |if_id                      |   163|
+|12    |    mem_wb                          |mem_wb                     |   103|
+|13    |    pc                              |pc                         |    12|
+|14    |    regfile                         |regfile                    |  1857|
+|15    |    stall                           |stall                      |    19|
+|16    |  vga                               |vga                        |   113|
++------+------------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1068.043 ; gain = 440.246
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 122 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1068.043 ; gain = 316.508
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1068.043 ; gain = 440.246
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1068.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 472 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1071.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+85 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1071.453 ; gain = 733.750
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1071.453 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/synth_4/top_pipeline.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_pipeline_utilization_synth.rpt -pb top_pipeline_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  7 16:10:35 2021...

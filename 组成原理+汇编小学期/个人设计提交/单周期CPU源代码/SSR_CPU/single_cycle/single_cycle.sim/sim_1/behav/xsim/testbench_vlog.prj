@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../single_cycle.srcs/sources_1/new/ip/data_ram/sim/data_ram.v" \
+"../../../../single_cycle.srcs/sources_1/new/ip/inst_rom/sim/inst_rom.v" \
+"../../../../single_cycle.srcs/sources_1/new/alu.v" \
+"../../../../single_cycle.srcs/sources_1/new/confreg/confreg.v" \
+"../../../../single_cycle.srcs/sources_1/new/control.v" \
+"../../../../single_cycle.srcs/sources_1/new/cpu.v" \
+"../../../../single_cycle.srcs/sources_1/new/pc.v" \
+"../../../../single_cycle.srcs/sources_1/new/regfile.v" \
+"../../../../single_cycle.srcs/sources_1/new/single_cycle.v" \
+"../../../../single_cycle.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

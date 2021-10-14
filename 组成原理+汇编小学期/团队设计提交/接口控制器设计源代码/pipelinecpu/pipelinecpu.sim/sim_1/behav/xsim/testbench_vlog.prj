@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../pipelinecpu.srcs/sources_1/new/ip/clk_wiz" --include "../../../../pipelinecpu.srcs/sources_1/new/mycpu" \
+"../../../../pipelinecpu.srcs/sources_1/new/ip/clk_wiz/clk_wiz_clk_wiz.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/ip/clk_wiz/clk_wiz.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/ip/data_ram/sim/data_ram.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/ip/inst_rom/sim/inst_rom.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/alu.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/uart/baudrate_gen.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/confreg/confreg.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/control.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/cpu.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/exe_mem.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/id_exe.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/if_id.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/mem_wb.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/pc.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/regfile.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/mycpu/stall.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/top_pipeline.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/uart/uart_rx.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/uart/uart_tx.v" \
+"../../../../pipelinecpu.srcs/sources_1/new/vga.v" \
+"../../../../pipelinecpu.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

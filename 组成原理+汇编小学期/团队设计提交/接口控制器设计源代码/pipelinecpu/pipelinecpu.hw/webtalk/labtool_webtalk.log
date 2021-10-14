@@ -1,0 +1,9 @@
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sat Sep  4 14:42:34 2021. For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep  4 14:42:34 2021...

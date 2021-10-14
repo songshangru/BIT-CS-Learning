@@ -1,0 +1,44 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto e597bfcffbdc4acb9605a9b95f91664f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'wa' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'reg_wa_' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:207]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port '_reg_wa' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:227]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'reg_wa_' [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:235]
+WARNING: [VRFC 10-5021] port 'switch' is not connected on this instance [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sim_1/new/testbench.v:13]
+WARNING: [VRFC 10-5021] port '_zero' is not connected on this instance [E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.srcs/sources_1/new/mycpu/cpu.v:190]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.id_exe
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.exe_mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.stall
+Compiling module xil_defaultlib.cpu
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.inst_rom
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=50.37...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_clk_wiz
+Compiling module xil_defaultlib.clk_wiz
+Compiling module xil_defaultlib.vga
+Compiling module xil_defaultlib.baudrate_gen_default
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.top_pipeline
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

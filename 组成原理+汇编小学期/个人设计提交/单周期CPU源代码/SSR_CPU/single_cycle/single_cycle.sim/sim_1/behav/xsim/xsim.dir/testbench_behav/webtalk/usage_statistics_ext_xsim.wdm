@@ -1,0 +1,38 @@
+version = "1.0";
+clients =
+(
+    { client_name = "project"; 
+        rules = ( 
+            { 
+                context="software_version_and_target_device";
+                xml_map="software_version_and_target_device";
+                html_map="software_version_and_target_device";
+                html_format="UserEnvStyle";
+            },
+            { 
+                context="user_environment";
+                xml_map="user_environment";
+                html_map="user_environment";
+                html_format="UserEnvStyle";
+            }
+        );
+        },
+
+    { client_name = "xsim"; 
+        rules = ( 
+            { 
+                context="xsim\\command_line_options";
+                xml_map="xsim\\command_line_options";
+                html_map="xsim\\command_line_options";
+                html_format="UnisimStatsStyle";
+            },
+            { 
+                context="xsim\\usage";
+                xml_map="xsim\\usage";
+                html_map="xsim\\usage";
+                html_format="UnisimStatsStyle";
+            }
+        );
+        }
+);
+

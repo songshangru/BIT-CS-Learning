@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep  7 16:11:59 2021
+# Process ID: 14364
+# Current directory: E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/impl_5
+# Command line: vivado.exe -log top_pipeline.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_pipeline.tcl -notrace
+# Log file: E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/impl_5/top_pipeline.vdi
+# Journal file: E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.runs/impl_5\vivado.jou
+#-----------------------------------------------------------
+source top_pipeline.tcl -notrace

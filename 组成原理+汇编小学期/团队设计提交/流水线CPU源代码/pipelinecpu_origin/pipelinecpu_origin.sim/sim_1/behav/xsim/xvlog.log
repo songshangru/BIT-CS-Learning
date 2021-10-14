@@ -1,0 +1,32 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/ip/inst_rom/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2458] undeclared symbol id_exe_reg_src, assumed default net type wire [C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/cpu.v:158]
+WARNING: [VRFC 10-3380] identifier 'exe_mem_pc_src' is used before its declaration [C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/cpu.v:42]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/exe_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/id_exe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_exe
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/mycpu/stall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stall
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sources_1/new/top_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workplace/Vivado/pipelinecpu_origin/pipelinecpu_origin.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

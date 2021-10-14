@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct  3 15:01:18 2021
+# Process ID: 1040
+# Current directory: C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Oct  3 15:01:22 2021. For additional details about this file, please refer to the WebTalk help file at C:/MyProgram/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct  3 15:01:22 2021...

@@ -1,0 +1,2 @@
+inst_rom.v,verilog,xil_defaultlib,../../../../single_cycle.srcs/sources_1/new/ip/inst_rom/sim/inst_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

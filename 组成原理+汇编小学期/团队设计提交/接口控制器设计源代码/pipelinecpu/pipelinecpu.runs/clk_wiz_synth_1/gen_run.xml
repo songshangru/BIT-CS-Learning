@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="clk_wiz_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1631002134">
+  <File Type="PA-TCL" Name="clk_wiz.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="clk_wiz_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="clk_wiz_reports.tcl"/>
+  <File Type="RDS-RDS" Name="clk_wiz.vds"/>
+  <File Type="RDS-UTIL" Name="clk_wiz_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="clk_wiz_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="clk_wiz.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="clk_wiz_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="clk_wiz_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz">
+    <File Path="$PSRCDIR/sources_1/new/ip/clk_wiz/clk_wiz.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="clk_wiz"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz">
+    <File Path="$PSRCDIR/sources_1/new/ip/clk_wiz/clk_wiz.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="clk_wiz"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

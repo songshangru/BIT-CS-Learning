@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="760166fs"></ZoomStartTime>
+      <ZoomEndTime time="1089967fs"></ZoomEndTime>
+      <Cursor1Time time="1035000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="143"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/testbench/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/alu/alu_res_tmp" type="array">
+      <obj_property name="ElementShortName">alu_res_tmp[32:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_res_tmp[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/control/op_id" type="array">
+      <obj_property name="ElementShortName">op_id[4:0]</obj_property>
+      <obj_property name="ObjectShortName">op_id[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/regfile/reg_data[9]" type="array">
+      <obj_property name="ElementShortName">[9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/regfile/reg_data[10]" type="array">
+      <obj_property name="ElementShortName">[10][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/regfile/reg_data[11]" type="array">
+      <obj_property name="ElementShortName">[11][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/regfile/reg_data[12]" type="array">
+      <obj_property name="ElementShortName">[12][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/regfile/reg_data[13]" type="array">
+      <obj_property name="ElementShortName">[13][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/regfile/reg_data[14]" type="array">
+      <obj_property name="ElementShortName">[14][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/top_pipeline/mycpu0/regfile/reg_data[15]" type="array">
+      <obj_property name="ElementShortName">[15][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+   </wvobject>
+</wave_config>

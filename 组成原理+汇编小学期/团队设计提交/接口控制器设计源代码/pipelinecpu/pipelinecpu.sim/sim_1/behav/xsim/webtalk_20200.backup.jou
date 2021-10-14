@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Sep  4 15:58:39 2021
+# Process ID: 20200
+# Current directory: E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/Xilinx/pipelinecpu/pipelinecpu/pipelinecpu.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace

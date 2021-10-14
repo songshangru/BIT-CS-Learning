@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Oct  2 13:07:09 2021
+# Process ID: 13252
+# Current directory: C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 110.375 ; gain = 17.895
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct  2 13:07:16 2021...

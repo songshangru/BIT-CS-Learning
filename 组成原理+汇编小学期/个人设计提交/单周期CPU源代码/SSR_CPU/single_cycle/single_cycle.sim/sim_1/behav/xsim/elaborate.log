@@ -1,0 +1,9 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/MyProgram/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 21844a1d0b9347799920aee397ed6ba5 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'switch' is not connected on this instance [C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sim_1/new/testbench.v:13]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

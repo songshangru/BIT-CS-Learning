@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/ip/data_ram/sim/data_ram.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/ip/inst_rom/sim/inst_rom.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/alu.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/control.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/cpu.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/exe_mem.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/id_exe.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/if_id.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/mem_wb.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/pc.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/regfile.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/mycpu/stall.v" \
+"../../../../pipelinecpu_origin.srcs/sources_1/new/top_pipeline.v" \
+"../../../../pipelinecpu_origin.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Sep 20 21:36:49 2021
+# Process ID: 18112
+# Current directory: C:/workplace/Vivado/pipelinecpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6096 C:\workplace\Vivado\pipelinecpu\pipelinecpu.xpr
+# Log file: C:/workplace/Vivado/pipelinecpu/vivado.log
+# Journal file: C:/workplace/Vivado/pipelinecpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/workplace/Vivado/pipelinecpu/pipelinecpu.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Xilinx/pipelinecpu/pipelinecpu' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/workplace/Vivado/pipelinecpu/pipelinecpu.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/MyProgram/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz' is locked:
+* IP definition 'Clocking Wizard (5.4)' for IP 'clk_wiz' (customized with software release 2017.2) has a newer major version in the IP Catalog. * IP definition 'Clocking Wizard (5.4)' for IP 'clk_wiz' (customized with software release 2017.2) has a different revision in the IP Catalog. * Current project part 'xc7a100tcsg324-1' and the part 'xc7a35tcsg324-1' used to customize the IP 'clk_wiz' do not match.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 20 22:42:34 2021...

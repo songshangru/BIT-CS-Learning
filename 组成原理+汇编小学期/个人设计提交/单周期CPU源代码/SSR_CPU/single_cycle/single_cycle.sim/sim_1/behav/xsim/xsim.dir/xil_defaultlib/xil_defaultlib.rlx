@@ -1,0 +1,16 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sim_1/new/testbench.v,1600790028,verilog,,,,testbench,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/alu.v,1633165044,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/confreg/confreg.v,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/head.vh,alu,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/confreg/confreg.v,1600790028,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/control.v,,confreg,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/control.v,1633169389,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/cpu.v,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/head.vh,control,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/cpu.v,1633169210,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/pc.v,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/head.vh,cpu,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/head.vh,1633164937,verilog,,,,,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/ip/data_ram/sim/data_ram.v,1632311244,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/sim/inst_rom.v,,data_ram,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/ip/inst_rom/sim/inst_rom.v,1633155893,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/alu.v,,inst_rom,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/pc.v,1633164966,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/regfile.v,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/head.vh,pc,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/regfile.v,1633165012,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/single_cycle.v,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/head.vh,regfile,,,,,,,,
+C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sources_1/new/single_cycle.v,1632311506,verilog,,C:/workplace/Vivado/SSRCPU/SSR_CPU/single_cycle/single_cycle.srcs/sim_1/new/testbench.v,,single_cycle,,,,,,,,
