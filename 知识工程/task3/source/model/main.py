@@ -9,7 +9,7 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 from torch.utils.data.dataset import Dataset
 from torch.utils.data.dataloader import DataLoader
-#参数设置:size，one-hot向量大小，max_sample训练集样本数，batch
+#参数设置:size，词向量，max_sample训练集样本数，batch
 size=50
 epochs=10
 alpha=0.0003
