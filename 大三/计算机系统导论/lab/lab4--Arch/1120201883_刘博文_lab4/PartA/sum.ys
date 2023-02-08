@@ -1,0 +1,40 @@
+# name : Bowen Liu
+# ID : 1120201883
+# date : 2022.11.12
+
+.pos 0
+	irmovq stack,%rsp
+	irmovq ele1,%rdi
+	call sum
+	halt
+
+.align 8
+ele1:
+	.quad 0x00a
+	.quad ele2
+ele2:
+	.quad 0x0b0
+	.quad ele3
+ele3:
+	.quad 0xc00
+	.quad 0
+
+sum:
+	irmovq $0,%rax
+	irmovq $8,%r8
+	andq %rdi,%rdi
+	jmp test
+
+loop:
+	mrmovq (%rdi),%r9
+	addq	%r9,%rax
+	mrmovq	8(%rdi),%rdi
+	andq %rdi,%rdi
+
+
+test:
+	jne loop
+	ret
+
+.pos 0x200
+stack:
